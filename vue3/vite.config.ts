@@ -1,3 +1,5 @@
+/** @format */
+
 import { fileURLToPath, URL } from 'node:url';
 
 import path from 'path';
@@ -38,7 +40,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       less: {
-        additionalData: `@import "${path.resolve('/src/styles/mixins/index.less')}";`, // less前置
+        additionalData: `@import "@src/styles/mixins/index.less";`, // less前置
       },
     },
   },
